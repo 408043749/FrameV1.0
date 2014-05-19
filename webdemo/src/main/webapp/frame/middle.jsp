@@ -2,18 +2,25 @@
 	pageEncoding="UTF-8" session="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<div class="frame-middle col-xs-9" style="height:80%;padding:20px;box-shadow:1px 1px 100px;border-radius:5px;float: right;position: relative;"  >
-	<div class="frame-middle-toolbar" style="position: absolute;right: 1px;bottom: -35px;width: 100%;text-align: center;">
-		<button type="button" class="btn btn-default btn-history-back" style="background-color: rgba(46, 49, 53, 0.24);"><span class="glyphicon glyphicon-arrow-left"></span></button>
-		<button type="button" class="btn btn-default btn-history-forward" style="background-color: rgba(46, 49, 53, 0.24);"><span class="glyphicon glyphicon-arrow-right"></span></button>
-		<button type="button" class="btn btn-default btn-resize-full" style="background-color: rgba(46, 49, 53, 0.24);"><span class="glyphicon glyphicon-resize-full"></span></button>
-		<button type="button" class="btn btn-default btn-resize-small" style="display: none;background-color: rgba(46, 49, 53, 0.24);"><span class="glyphicon glyphicon-resize-small"></span></button>
+<div class="frame-middle col-xs-9" >
+	<div class="frame-middle-toolbar">
+		<button type="button" class="btn btn-default btn-history-back" ><span class="glyphicon glyphicon-arrow-left"></span></button>
+		<button type="button" class="btn btn-default btn-history-forward" ><span class="glyphicon glyphicon-arrow-right"></span></button>
+		<button type="button" class="btn btn-default btn-resize-full" ><span class="glyphicon glyphicon-resize-full"></span></button>
+		<button type="button" class="btn btn-default btn-resize-small" style="display: none;"><span class="glyphicon glyphicon-resize-small"></span></button>
 	</div>
-	<iframe id="frame-middle-iframe" src="http://v3.bootcss.com/" frameborder=0 width="100%" height="100%"></iframe>
+	<iframe id="frame-middle-iframe" src="http://v3.bootcss.com/"  onreadystatechange="fnStartInit()" frameborder=0 width="100%" height="100%" target="_self" ></iframe>
 </div>
 
 <script type="text/javascript">
+		function fnStartInit(){
+			alert(2);	
+		};
 	$(document).ready(function() {
+		$('#frame-middle-iframe').load(function(response,status,xhr){
+			console.log(response);
+		});
+		
 		/**
 		* 扩充
 		*/

@@ -16,6 +16,7 @@
 <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../lib/ztree/css/zTreeStyle/zTreeStyle.css" type="text/css">
 <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
 <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

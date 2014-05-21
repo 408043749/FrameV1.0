@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <div class="frame-middle col-xs-9" >
-	<div class="frame-middle-toolbar">
+	<div class="frame-middle-toolbar"> 
 		<button type="button" class="btn btn-default btn-history-back" ><span class="glyphicon glyphicon-arrow-left"></span></button>
 		<button type="button" class="btn btn-default btn-history-forward" ><span class="glyphicon glyphicon-arrow-right"></span></button>
 		<button type="button" class="btn btn-default btn-resize-full" ><span class="glyphicon glyphicon-resize-full"></span></button>

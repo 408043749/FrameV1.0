@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8" session="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<div class="frame-left col-xs-3" >
+<div class="frame-left col-xs-3" > 
 	<div class="frame-left-content col-xs-12">
 		<div id="treeDemo" class="ztree"></div>
 	</div>

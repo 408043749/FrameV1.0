@@ -11,7 +11,8 @@
 			 		{"name": "bootstrap 3.0中文网","data_url":"http://v3.bootcss.com/"},
 			 		{"name": "bootstrap JqueryUI网","data_url":"http://www.bootcss.com/p/jquery-ui-bootstrap/#block-state"}
 				]
-			}
+			},
+			{"name": "ace","data_url":"http://ace.c9.io/"}
 		]
 	},
 	{

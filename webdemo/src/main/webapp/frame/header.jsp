@@ -18,6 +18,7 @@
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="#">Home</a></li>
 			<li><a href="#">网站</a></li>
+			<li><a href="<c:url value="/plugins-demo/ace.jsp"/>">编辑器</a></li>
 			<li><a href="#">Link</a></li>
 
 		</ul>

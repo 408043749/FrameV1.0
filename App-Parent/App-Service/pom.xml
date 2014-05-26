@@ -8,9 +8,9 @@
 		<artifactId>App-Parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>App-Web</artifactId>
+	<artifactId>App-Service</artifactId>
 	<packaging>jar</packaging>
-	<name>App-Web Maven Webapp</name>
+	<name>App-Service Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
@@ -19,22 +19,14 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>apache-cxf</artifactId>
+			<version>3.0.0-milestone2</version>
+			<type>pom</type>
+			<scope>import</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
-		<finalName>App-Web</finalName>
+		<finalName>App-Service</finalName>
 	</build>
 </project>

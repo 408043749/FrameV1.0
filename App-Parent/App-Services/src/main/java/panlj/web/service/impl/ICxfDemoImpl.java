@@ -1,20 +1,24 @@
 package panlj.web.service.impl;
 
-import javax.jws.WebService;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 
 import org.apache.cxf.jaxrs.JAXRSServerFactoryBean;
+import org.springframework.stereotype.Service;
 
 import panlj.web.service.ICxfDemo;
 
-@WebService()
+@Service(value="iCxfDemoImpl")
+@Path("/iCxfDemoImpl")
 public class ICxfDemoImpl implements ICxfDemo {
 
-	@GET
-	@Path("/sayHello")
 	public String sayHello(String foo) {
 		return "hello " + foo;
+	}
+	
+	public String sayHello2(String name,String pwd) {
+		return "result: "+name+","+pwd;
 	}
 	
 	/**
@@ -29,4 +33,5 @@ public class ICxfDemoImpl implements ICxfDemo {
 		restServer.setAddress("http://localhost:8080/");
 		restServer.create();
 	}
+
 }

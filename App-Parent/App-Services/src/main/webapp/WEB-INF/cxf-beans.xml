@@ -3,14 +3,23 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:jaxws="http://cxf.apache.org/jaxws"
+    xmlns:jaxrs="http://cxf.apache.org/jaxrs"  
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://cxf.apache.org/jaxws 
 		http://cxf.apache.org/schemas/jaxws.xsd 
+		http://cxf.apache.org/jaxrs 
+		http://cxf.apache.org/schemas/jaxrs.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <jaxws:endpoint id="iCxfDemo" implementor="panlj.web.service.impl.ICxfDemoImpl" address="/cxfdemo" />
-
+	<context:component-scan base-package="panlj.web.service.**"></context:component-scan>
+	
+<!--     <jaxws:endpoint id="iCxfDemo" implementor="iCxfDemoImpl" address="/cxfdemo" /> -->
+	<jaxrs:server id="rest_iCxfDemoImpl"  address="/" >
+		<jaxrs:serviceBeans>
+			<ref bean="iCxfDemoImpl" />
+		</jaxrs:serviceBeans>
+	</jaxrs:server>
 </beans>

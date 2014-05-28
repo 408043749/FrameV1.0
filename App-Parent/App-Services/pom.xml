@@ -8,11 +8,17 @@
 		<artifactId>App-Parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>App-Service</artifactId>
+	<artifactId>App-Services</artifactId>
 	<packaging>jar</packaging>
-	<name>App-Service Maven Webapp</name>
+	<name>App-Services Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -27,6 +33,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>App-Service</finalName>
+		<finalName>App-Services</finalName>
 	</build>
 </project>

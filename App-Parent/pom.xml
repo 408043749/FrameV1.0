@@ -54,5 +54,7 @@
 		<module>App-Web</module>
 		<module>App-Service</module>
     <module>App-Services</module>
+    <module>Domains</module>
+    <module>App-Domains</module>
   </modules>
 </project>

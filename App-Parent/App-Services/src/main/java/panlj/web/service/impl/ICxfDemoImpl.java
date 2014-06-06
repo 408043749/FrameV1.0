@@ -48,7 +48,7 @@ public class ICxfDemoImpl implements ICxfDemo {
 		app.setName("PANLJ");
 		app.setPwd("123456");
 		WebClient client = WebClient.create("http://localhost:8080/App-Services/iCxfDemo");
-		client.path("/getApp/panlj");
+		client.path("/getApp");
 		App resultApp = client.post(app,App.class);
 		System.out.println(resultApp.getId());
 	}

@@ -3,6 +3,7 @@
 	<name>App-Services</name>
 	<comment></comment>
 	<projects>
+		<project>App-Domains</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -39,7 +39,5 @@ public interface  ICxfDemo {
 	 */
 	@POST
 	@Path("/getApp")
-	@Produces("application/json")
-    @Consumes("application/json")
 	public App getApp(App app);
 }

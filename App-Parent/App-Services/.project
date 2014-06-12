@@ -4,6 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>App-Domains</project>
+		<project>App-Dao</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

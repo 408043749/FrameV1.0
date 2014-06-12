@@ -3,7 +3,11 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <dependent-module archiveName="App-Domains.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/App-Domains/App-Domains">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="App-Dao.war" deploy-path="/WEB-INF/lib" handle="module:/resource/App-Dao/App-Dao">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="App-Services"/>

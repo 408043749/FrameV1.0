@@ -56,5 +56,6 @@
     <module>App-Services</module>
     <module>Domains</module>
     <module>App-Domains</module>
+    <module>App-Dao</module>
   </modules>
 </project>
